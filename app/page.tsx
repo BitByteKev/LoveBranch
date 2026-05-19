@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CTASection } from "./components/CTASection";
 
+
 const services = [
   {
     slug: "tree-removal",
@@ -143,29 +144,6 @@ export default function Home() {
                 <div className="proof-text">
                   Trusted by <strong>U.S. Naval Hospital</strong>, <strong>AT&amp;T</strong> &amp;{" "}
                   <strong>Wyndham Hotels</strong>
-                </div>
-              </div>
-            </div>
-            <div className="hero-visual float-anim">
-              <Image
-                src="/images/before-after.avif"
-                alt="Before and after of a Love Branch yard transformation in San Diego"
-                fill
-                priority
-                sizes="(max-width: 880px) 100vw, 540px"
-              />
-              <div className="float-badge badge-1">
-                <div className="badge-icon">✅</div>
-                <div className="badge-text">
-                  Licensed &amp; Insured
-                  <small>CSLB #1146955</small>
-                </div>
-              </div>
-              <div className="float-badge badge-2">
-                <div className="badge-icon">⚡</div>
-                <div className="badge-text">
-                  Same-Day Quotes
-                  <small>Usually under 2 hrs</small>
                 </div>
               </div>
             </div>

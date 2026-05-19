@@ -112,9 +112,20 @@ nav.main {
     radial-gradient(ellipse at bottom left, rgba(31, 61, 43, 0.06), transparent 50%),
     var(--paper);
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr;
   gap: 64px;
   align-items: center;
   position: relative;
@@ -258,12 +269,8 @@ nav.main {
   margin-top: 2px;
 }
 @media (max-width: 880px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-grid { gap: 48px; }
   .hero { padding: 48px 0 60px; }
-  .hero-visual { max-width: 420px; margin: 0 auto; aspect-ratio: 1/1; }
-  .float-badge { font-size: 12px; padding: 10px 14px; }
-  .badge-1 { left: -10px; top: 16px; }
-  .badge-2 { right: -10px; bottom: 30px; }
 }
 
 /* ============ CREDS ============ */
