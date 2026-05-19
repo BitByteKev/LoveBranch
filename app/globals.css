@@ -500,7 +500,7 @@ section.block { padding: 100px 0; }
     radial-gradient(circle at 20% 30%, rgba(244, 194, 101, 0.1), transparent 50%),
     radial-gradient(circle at 80% 70%, rgba(217, 127, 44, 0.08), transparent 50%);
 }
-.cta-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.cta-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; }
 .cta h2 { color: var(--cream); font-size: clamp(32px, 4.5vw, 52px); margin-bottom: 20px; }
 .cta p { font-size: 18px; opacity: 0.85; margin-bottom: 32px; }
 .cta-phone {
@@ -514,6 +514,126 @@ section.block { padding: 100px 0; }
 }
 .cta-phone:hover { color: white; }
 .cta-hours { font-size: 14px; opacity: 0.7; }
+
+/* ---- CTA divider ---- */
+.cta-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 36px auto 24px;
+  max-width: 480px;
+  color: rgba(246, 241, 231, 0.55);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cta-divider::before,
+.cta-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(246, 241, 231, 0.18);
+}
+
+/* ---- Quote form ---- */
+.quote-form {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+  background: rgba(246, 241, 231, 0.04);
+  border: 1px solid rgba(246, 241, 231, 0.12);
+  border-radius: 16px;
+  padding: 28px;
+  backdrop-filter: blur(6px);
+}
+.quote-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.quote-field { display: flex; flex-direction: column; gap: 6px; }
+.quote-field-full { grid-column: 1 / -1; }
+.quote-field > span {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(246, 241, 231, 0.85);
+  letter-spacing: 0.01em;
+}
+.quote-field > span em {
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(246, 241, 231, 0.5);
+}
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 15px;
+  color: var(--cream);
+  background: rgba(13, 24, 16, 0.55);
+  border: 1px solid rgba(246, 241, 231, 0.18);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.quote-field textarea { resize: vertical; min-height: 96px; }
+.quote-field input::placeholder,
+.quote-field textarea::placeholder { color: rgba(246, 241, 231, 0.4); }
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  outline: none;
+  border-color: #f4c265;
+  box-shadow: 0 0 0 3px rgba(244, 194, 101, 0.18);
+  background: rgba(13, 24, 16, 0.75);
+}
+.quote-field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23f6f1e7' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+  padding-right: 38px;
+}
+.quote-field select option { color: var(--moss-deep); background: var(--cream); }
+.quote-submit {
+  margin-top: 6px;
+  background: var(--sun);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.quote-submit:hover:not(:disabled) { background: var(--sun-deep); transform: translateY(-1px); }
+.quote-submit:disabled { opacity: 0.65; cursor: progress; }
+.quote-note {
+  font-size: 12px;
+  color: rgba(246, 241, 231, 0.55);
+  text-align: center;
+  margin: 4px 0 0;
+}
+.quote-success {
+  background: rgba(244, 194, 101, 0.12);
+  border: 1px solid rgba(244, 194, 101, 0.35);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+.quote-success strong {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  color: #f4c265;
+  margin-bottom: 8px;
+}
+.quote-success p { margin: 0; opacity: 0.85; font-size: 15px; }
 
 /* ============ FOOTER ============ */
 footer {
@@ -709,4 +829,7 @@ footer {
   .badge-icon { width: 30px; height: 30px; font-size: 16px; }
   .service-body { padding: 20px 22px 0; }
   .service { padding: 0 0 24px; }
+  .quote-form { padding: 20px; }
+  .quote-row { grid-template-columns: 1fr; }
+  .cta-divider { margin: 28px auto 20px; font-size: 12px; }
 }
