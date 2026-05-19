@@ -19,14 +19,17 @@ export function Nav() {
         </Link>
         <div className="nav-links">
           <Link href="/#services">Services</Link>
+          <Link href="/work">Work</Link>
           <Link href="/areas-we-serve">Areas</Link>
           <Link href="/#reviews">Reviews</Link>
-          <Link href="/#why">Why Us</Link>
         </div>
-        <a href="tel:6193300801" className="nav-cta">
-          <span aria-hidden="true">📞</span>
-          <span className="nav-cta-number">(619) 330-0801</span>
-        </a>
+        <div className="nav-actions">
+          <Link href="/quote" className="nav-quote">Free quote</Link>
+          <a href="tel:6193300801" className="nav-cta">
+            <span aria-hidden="true">📞</span>
+            <span className="nav-cta-number">(619) 330-0801</span>
+          </a>
+        </div>
       </div>
     </nav>
   );

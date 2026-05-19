@@ -30,13 +30,14 @@ export function Footer() {
             </ul>
           </div>
           <div className="foot">
-            <h4>Areas</h4>
+            <h4>The Site</h4>
             <ul>
+              <li><Link href="/work">Recent Work</Link></li>
+              <li><Link href="/quote">Free Quote</Link></li>
               <li><Link href="/areas-we-serve">All Service Areas</Link></li>
               <li>Chula Vista</li>
               <li>Poway</li>
               <li>El Cajon</li>
-              <li>La Mesa</li>
               <li>Carlsbad</li>
             </ul>
           </div>

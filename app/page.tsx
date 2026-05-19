@@ -111,42 +111,117 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <header className="hero">
+      <header className="hero hero-editorial">
+        <div className="hero-bg" aria-hidden="true">
+          <span className="hero-leaf hero-leaf-1" />
+          <span className="hero-leaf hero-leaf-2" />
+          <span className="hero-leaf hero-leaf-3" />
+          <span className="hero-grain" />
+        </div>
+
         <div className="wrap">
-          <div className="hero-grid">
+          <div className="hero-grid hero-grid-split">
             <div className="hero-copy">
               <span className="eyebrow hero-eyebrow">
                 <span className="dot"></span>
-                Available 24/7 in San Diego County
+                Available this week · San Diego County
               </span>
               <h1 className="reveal">
                 San Diego&apos;s most <em>trusted</em> tree &amp; yard team.
               </h1>
               <p className="lede reveal delay-1">
-                From routine trimming to full hillside fire clearing — we show up on time, work clean,
-                and beat any written quote. Licensed, insured, and Google Guaranteed.
+                Family-run since the &apos;90s. From routine trimming to full hillside fire clearing —
+                we show up on time, work clean, and beat any written quote.
               </p>
-              <div className="hero-ctas reveal delay-2">
+
+              <ul className="hero-guarantees reveal delay-2">
+                <li>
+                  <span className="hero-check" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="12" height="12">
+                      <path d="M3 8l3.2 3L13 5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  Quote back within 2 hours
+                </li>
+                <li>
+                  <span className="hero-check" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="12" height="12">
+                      <path d="M3 8l3.2 3L13 5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  We beat any written price
+                </li>
+                <li>
+                  <span className="hero-check" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="12" height="12">
+                      <path d="M3 8l3.2 3L13 5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  Yard left spotless, every job
+                </li>
+              </ul>
+
+              <div className="hero-ctas reveal delay-3">
                 <a href="tel:6193300801" className="btn btn-primary">
-                  📞 Call (619) 330-0801
+                  <span aria-hidden="true">📞</span>
+                  Call (619) 330-0801
                 </a>
-                <Link href="#contact" className="btn btn-secondary">
-                  Get Free Quote
+                <Link href="/quote" className="btn btn-secondary">
+                  Get free quote →
                 </Link>
               </div>
-              <div className="hero-proof reveal delay-3">
-                <div>
-                  <div className="stars">★★★★★</div>
+
+              <div className="hero-proof reveal delay-4">
+                <div className="hero-rating">
+                  <div className="stars" aria-hidden="true">★★★★★</div>
                   <div className="proof-text">
-                    <strong>5.0</strong> from <strong>150+ reviews</strong>
+                    <strong>5.0</strong> · 150+ Google reviews
                   </div>
                 </div>
-                <div className="proof-text">
-                  Trusted by <strong>U.S. Naval Hospital</strong>, <strong>AT&amp;T</strong> &amp;{" "}
-                  <strong>Wyndham Hotels</strong>
+                <span className="hero-proof-rule" aria-hidden="true" />
+                <div className="hero-license">
+                  <span className="hero-license-label">California Contractor</span>
+                  <span className="hero-license-num">CSLB&nbsp;#1146955</span>
                 </div>
               </div>
             </div>
+
+            <aside className="hero-visual hero-visual-card reveal delay-2" aria-hidden="true">
+              <Image
+                src="/images/before-after.avif"
+                alt=""
+                width={820}
+                height={1025}
+                priority
+                sizes="(max-width: 880px) 100vw, 520px"
+              />
+              <div className="hero-photo-shade" />
+
+              <div className="hero-stamp" role="img" aria-label="Licensed, insured, bonded — CSLB 1146955">
+                <div className="hero-stamp-ring">
+                  <span className="hero-stamp-mark">★</span>
+                  <span className="hero-stamp-title">Licensed</span>
+                  <span className="hero-stamp-title">Insured</span>
+                  <span className="hero-stamp-title">Bonded</span>
+                  <span className="hero-stamp-num">#1146955</span>
+                </div>
+              </div>
+
+              <div className="hero-availability">
+                <span className="dot" aria-hidden="true"></span>
+                <div className="hero-availability-text">
+                  <strong>Crew available this week</strong>
+                  <small>Quotes back in ~2 hrs</small>
+                </div>
+              </div>
+
+              <div className="hero-clients">
+                <span className="hero-clients-label">Trusted by</span>
+                <span className="hero-clients-list">
+                  U.S. Naval Hospital · AT&amp;T · Wyndham Hotels
+                </span>
+              </div>
+            </aside>
           </div>
         </div>
       </header>
