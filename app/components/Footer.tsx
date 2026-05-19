@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -7,11 +8,13 @@ export function Footer() {
         <div className="foot-grid">
           <div className="foot foot-brand">
             <Link href="/" className="logo" style={{ color: "var(--cream)" }}>
-              <span className="logo-mark" aria-hidden="true">🌳</span>
-              Love Branch
+              <span className="logo-mark" aria-hidden="true">
+                <Image src="/images/logo.avif" alt="" width={36} height={36} />
+              </span>
+              <span className="logo-text">Love Branch</span>
             </Link>
             <p>
-              San Diego&apos;s family-run tree and yard care team. Licensed, insured, and proud to
+              San Diego&apos;s trusted tree and yard care team. Licensed, insured, and proud to
               serve all of San Diego County.
             </p>
           </div>

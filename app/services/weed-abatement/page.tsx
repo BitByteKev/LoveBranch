@@ -12,7 +12,7 @@ const schema = buildServiceSchema({
   name: "Weed Abatement & Spraying",
   description: "Weed abatement, brush clearing, and weed control spraying across San Diego County.",
   slug: "weed-abatement",
-  image: "/images/weed-abatement.jpg",
+  image: "/images/weed-abatement.avif",
 });
 
 export default function Page() {
@@ -26,7 +26,7 @@ export default function Page() {
         title="Weed Abatement"
         h1="Weed Abatement & Spraying in San Diego"
         lede="Invasive weeds, dry grass, and overgrown lots — cleared down to bare dirt or kept on a recurring spray schedule. Code-compliance ready."
-        heroImg="/images/weed-abatement.jpg"
+        heroImg="/images/weed-abatement.avif"
         heroAlt="Cleared and sprayed lot after weed abatement service in San Diego"
         intro={[
           "Weeds are more than an eyesore. In San Diego’s dry months they’re fuel; year-round they choke out the plants you actually want. We handle both ends: aggressive abatement and ongoing spray maintenance.",

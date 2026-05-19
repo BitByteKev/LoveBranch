@@ -13,7 +13,7 @@ const schema = buildServiceSchema({
   description:
     "Hedge trimming, palm skinning, frond removal, and shaping services across San Diego County.",
   slug: "hedge-palm-care",
-  image: "/images/hedge-palm.jpg",
+  image: "/images/hedge-palm.avif",
 });
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
         title="Hedge & Palm Care"
         h1="Hedge Trimming & Palm Care in San Diego"
         lede="Crisp hedge lines, properly skinned palms, and clean frond removal. We use sharp tools, the right ladders, and we sweep the driveway when we’re done."
-        heroImg="/images/hedge-palm.jpg"
+        heroImg="/images/hedge-palm.avif"
         heroAlt="Crisply trimmed hedges and skinned palm trees outside a San Diego home"
         intro={[
           "Hedges and palms set the tone for a property. When they’re overgrown, they make the whole yard look neglected; when they’re shaped right, the rest of the landscape falls into place.",

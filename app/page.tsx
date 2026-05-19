@@ -18,7 +18,7 @@ const services = [
     title: "Hedge & Palm Care",
     blurb: "Sharp, defined hedges and clean, healthy palms. We shape them the way your property deserves.",
     cta: "Book service",
-    img: "/images/hedge-palm.jpg",
+    img: "/images/hedge-palm.avif",
     alt: "Freshly trimmed palm trees and sculpted hedges in a Southern California yard",
   },
   {
@@ -36,7 +36,7 @@ const services = [
     title: "Weed Abatement & Spraying",
     blurb: "Reclaim your yard from invasive weeds with full abatement and targeted treatment plans.",
     cta: "Schedule treatment",
-    img: "/images/weed-abatement.jpg",
+    img: "/images/weed-abatement.avif",
     alt: "Crew clearing overgrown weeds from a San Diego property line",
   },
   {
@@ -148,8 +148,8 @@ export default function Home() {
             </div>
             <div className="hero-visual float-anim">
               <Image
-                src="/images/hero.jpg"
-                alt="Love Branch crew completing a tree removal and yard cleanup in San Diego"
+                src="/images/before-after.avif"
+                alt="Before and after of a Love Branch yard transformation in San Diego"
                 fill
                 priority
                 sizes="(max-width: 880px) 100vw, 540px"

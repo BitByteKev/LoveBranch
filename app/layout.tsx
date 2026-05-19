@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Love Branch San Diego",
   },
   description:
-    "Family-run San Diego tree removal, trimming, weed abatement, fence install, and full yard care. Licensed CSLB #1146955, fully insured, Google Guaranteed. Free quotes. (619) 330-0801.",
+    "San Diego tree removal, trimming, weed abatement, fence install, and full yard care. Licensed CSLB #1146955, fully insured, Google Guaranteed. Free quotes. (619) 330-0801.",
   keywords: [
     "tree removal San Diego",
     "tree trimming San Diego",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Love Branch — San Diego Tree & Yard Service",
     description:
-      "Family-run, fully insured tree and yard care across San Diego County. (619) 330-0801.",
+      "Fully insured tree and yard care across San Diego County. (619) 330-0801.",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: SITE_URL },
